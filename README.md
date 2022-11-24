@@ -2,11 +2,18 @@ Scrambles images based on keys you provide. The same keys can be used by a third
  
 
  
-## Raw  
-![App Screenshot](./demo.jpg?raw=true)  
+## Demo  
 
-## Encrypted
-![App Screenshot](./encrypted.png?raw=true) 
-
-## Decrypted
-![App Screenshot](./decrypted.png?raw=true)  
+<table style="padding:10px">
+  <tr>
+    <td> 
+         <img src="./demo.jpg"  alt="1" width = 279px height = 496px >
+    </td>  
+    <td>
+        <img src="./encrypted.png" align="right" alt="2" width = 279px height = 496px>
+    </td>
+   <td>
+        <img src="./decrypted.png" alt="3" width = 288px height = 512px>
+    </td>
+  </tr>
+</table>
