@@ -1,0 +1,56 @@
+<?php
+// include 'example.php';
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Remote style sheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" id="content">
+        <div class="row">
+            <div class="col-4">
+                <h1>Original Image</h1>
+                <img src="demo.jpg" alt="jubei" class="img-fluid">
+            </div>
+
+            <div class="col-4">
+                <h1>Encrypted Image</h1>
+                <img src="encrypted.png" alt="encrypted" class="img-fluid">
+            </div>
+
+            <div class="col-4">
+                <h1>Decrypted Image</h1>
+
+                <img id="decrypt" class="img-fluid">
+            </div>
+        </div>
+
+
+
+        <script src="/fotosecure.js" type="text/javascript"></script>
+        <script>
+            var img = new Image();
+            const keys = [0.45, 0.14, 0.667, 0.21, 0.789, 0.43, 0.5, 0.33, 0.19, 0.48];
+            const factor = 0.2;
+            const watermarkText = 'demo';
+
+            img.onload = function () {
+                let canvas = decrypt(img, keys, factor);
+
+                document.getElementById('decrypt').src = canvas.toDataURL();
+            };
+
+            img.src = 'encrypted.png';
+        </script>
+</body>
+
+</html>
