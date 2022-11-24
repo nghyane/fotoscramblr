@@ -13,7 +13,8 @@ Scrambles images based on keys you provide. The same keys can be used by a third
     <td>
         <img src="./encrypted.png" width="100%" >
     </td>
-   <td>
+   <td> 
+        <p>decrypted</p>
         <img src="./decrypted.png" width="100%" >
     </td>
   </tr>
