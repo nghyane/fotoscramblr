@@ -4,16 +4,17 @@ Scrambles images based on keys you provide. The same keys can be used by a third
  
 ## Demo  
 
+
 <table style="padding:10px">
   <tr>
     <td> 
-         <img src="./demo.jpg"  alt="1" width = 279px height = 496px >
+         <img src="./demo.jpg" width="100"  >
     </td>  
     <td>
-        <img src="./encrypted.png" align="right" alt="2" width = 279px height = 496px>
+        <img src="./encrypted.png" width="100" >
     </td>
    <td>
-        <img src="./decrypted.png" alt="3" width = 288px height = 512px>
+        <img src="./decrypted.png" width="100" >
     </td>
   </tr>
 </table>
